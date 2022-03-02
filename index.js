@@ -1,9 +1,12 @@
-import express from "express";
-import Cors from 'cors';
+// import express from "express";
+// import Cors from 'cors';
+const express=require("express");
+
+const Cors=require("cors");
 const app = express();
 const port = process.env.PORT || 8001;
-app.use(package.json());
-app.use(Cors());
+// app.use(package.json());
+// app.use(Cors());
 
 app.get('/', (req, res) => res.status(200).send("Hello Programmers"));
 
